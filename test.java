@@ -6,7 +6,9 @@ import java.util.Scanner;
 public class TestPalindromes {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println(palindrome("juan"));	
+		System.out.println("Insert a word to identify if it is a palindrome or not: ");
+		String word = input.nextLine();
+		System.out.println(palindrome(word));	
 	}
 	
 	public static boolean palindrome(String word) {
